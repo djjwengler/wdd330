@@ -1,0 +1,39 @@
+h1
+{
+    display: block;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background: white;
+
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    color: #AAA;
+    font-size: 150px;
+}
+
+#box1, #box2, #box4, #box5 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#box3 {border-bottom: 1px solid black;}
+
+#box6 {border-bottom: 1px solid black;
+}
+
+#box7 {border-right: 1px solid black;}
+
+#box8 {border-right: 1px solid black;}
