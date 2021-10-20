@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Poppins&display=swap");
+:root {
+  --red: #931f1d;
+  --dblue: #2b2d42;
+  --mblue: #8d99ae;
+  --lblue: #edf2f4;
+  --gold: #cca43b;
+  --hfont: "Andada Pro", serif;
+  --pfont: "Poppings", sans-serif;
+}
+body {
+  background-color: var(--lblue);
+}
+main {
+  margin: auto;
+  width: 300px;
+}
+.todo__title {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: var(--hfont);
+  color: var(--dblue);
+}
+.todo__list {
+  font-size: 1.3em;
+  font-family: var(--pfont);
+  color: var(--dblue);
+  border-top: solid 0.5px var(--dblue);
+  border-right: solid 0.5px var(--dblue);
+  border-left: solid 0.5px var(--dblue);
+}
+.todo__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1px;
+  border: solid 0.25px var(--dblue);
+  align-items: center;
+  border-collapse: collapse;
+}
+.todo__item--strike {
+  padding-left: 5px;
+}
+input[type="checkbox"] {
+  transform: scale(1.5, 1.5);
+  padding-left: 5px;
+}
+
+.todo__label {
+  padding-left: 10px;
+}
+.todo__item--remove {
+  width: 30px;
+  border-style: none;
+  background-color: var(--mblue);
+  color: var(--lblue);
+  font-size: 1.2em;
+  justify-content: end;
+}
+.todo__footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border: solid 1px var(--dblue);
+  font-family: var(--pfont);
+}
+.todo__count {
+  padding-left: 5px;
+}
+.todo__button {
+  border-style: none;
+  background-color: var(--lblue);
+  padding: 0px;
+  font-family: var(--pfont);
+}
+.todo__item--strike {
+  text-decoration: line-through;
+}
+
+.todo__button--select {
+  border: 2px solid var(--red);
+}
+.todo__add {
+  margin-top: 20px;
+}
+.todo__add {
+  height: 40px;
+}
+
+.todo__submit {
+  height: 40px;
+  font-family: var(--hfont);
+  font-size: 1em;
+  background-color: var(--gold);
+  color: var(--dblue);
+}
+.todo__submit:hover {
+  background-color: var(--red);
+  color: var(--lblue);
+}
+.todo__submit:active {
+  background-color: var(--dblue);
+  color: var(--lblue);
+}
