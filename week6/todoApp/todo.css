@@ -50,10 +50,11 @@ input[type="checkbox"] {
 .todo__item--remove {
   width: 30px;
   border-style: none;
-  background-color: var(--mblue);
+  background-color: var(--dblue);
   color: var(--lblue);
   font-size: 1.2em;
   justify-content: end;
+  margin-right: -1px;
 }
 .todo__footer {
   display: grid;
@@ -98,4 +99,7 @@ input[type="checkbox"] {
 .todo__submit:active {
   background-color: var(--dblue);
   color: var(--lblue);
+}
+.todo__add--hidden{
+    display: none;
 }

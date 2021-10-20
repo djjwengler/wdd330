@@ -81,9 +81,13 @@ function addTodo() {
   storeTodo();
   document.getElementById("todo__add").value = "";
   addSection(toDoList);
+  seeAll();
 }
 
 function addSection(arr) {
+  if (arr.length<1){
+    document.getElementById("todo__list").innerHTML = "This list is empty!";
+  }else{
   document.getElementById("todo__list").innerHTML = "";
   let list = document.getElementById("todo__list");
   for (let i = 0; i < arr.length; i++) {
@@ -110,7 +114,7 @@ function addSection(arr) {
         .classList.add("todo__item--strike");
       document.getElementById("item" + i).setAttribute("checked", "true");
     }
-  }
+  }}
   taskCount();
 }
 
