@@ -50,4 +50,6 @@ function removeTodo(index, arr, item) {
     storeTodo(item, arr);
   }
 
+
+
 export { addRed, removeRed, enterKey, taskCount, getIndex, completed, removeTodo };
