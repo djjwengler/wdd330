@@ -10,7 +10,7 @@ enter.addEventListener("keyup", function (event) {
   }
 });
 
-let toDoList = [];
+let toDoList;
 function storeTodo() {
   window.localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
