@@ -12,7 +12,7 @@ const toDos = new ToDos('todos');
 //   }
 // });
 
-// let toDoList = [];
+// let toDoList;
 // function storeTodo() {
 //   localStorage.setItem("toDoList", JSON.stringify(toDoList));
 // }
