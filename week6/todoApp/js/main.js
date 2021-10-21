@@ -10,7 +10,7 @@ enter.addEventListener("keyup", function (event) {
   }
 });
 
-let toDoList;
+let toDoList = [];
 function storeTodo() {
   localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
@@ -81,6 +81,7 @@ function addTodo() {
   };
   if(localStorage.getItem('toDoList') !== null){
     retrieveTodo();
+    
   }
   toDoList.push(toDo);
   storeTodo();
