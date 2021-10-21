@@ -36,6 +36,12 @@ const hikeList = [
   }
 ];
 
+// const myHikes = new Hikes('hikes');
+// window.addEventListener('load', () => {
+//   myHikes.showHikeList();
+// });
+
+
 const imgBasePath = '//byui-cit.github.io/cit261/examples/';
 
 export default class Hikes {

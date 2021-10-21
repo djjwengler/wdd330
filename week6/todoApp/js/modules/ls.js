@@ -1,11 +1,10 @@
-let toDoList = [];
-function storeTodo() {
-  localStorage.setItem("toDoList", JSON.stringify(toDoList));
-}
+function retrieveTodo(list) {
+  return JSON.parse(localStorage.getItem(list) || []);
+   }
 
-function retrieveTodo() {
-  toDoList = JSON.parse(localStorage.getItem("toDoList") || []);
-  return toDoList;
-}
+  function storeTodo(listkey, listdata) { 
+    localStorage.setItem(listkey, JSON.stringify(listdata));
+  }
+  
+  export { retrieveTodo, storeTodo };
 
-export { toDoList, storeTodo, retrieveTodo };

@@ -80,18 +80,13 @@ input[type="checkbox"] {
 }
 .todo__add {
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 5px;
-  align-items: center;
-
 }
-.todo__add__input {
+.todo__add {
   height: 40px;
 }
 
 .todo__submit {
-  height: 45px;
+  height: 40px;
   font-family: var(--hfont);
   font-size: 1em;
   background-color: var(--gold);
