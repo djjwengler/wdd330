@@ -79,7 +79,9 @@ function addTodo() {
     content: document.getElementById("todo__add").value,
     completed: false,
   };
-  retrieveTodo();
+  if(localStorage.getItem('toDoList') !== null){
+    retrieveTodo();
+  }
   toDoList.push(toDo);
   storeTodo();
   document.getElementById("todo__add").value = "";
