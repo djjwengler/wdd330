@@ -10,17 +10,20 @@ enter.addEventListener("keyup", function (event) {
   }
 });
 
-let toDoList = [];
+let toDoList;
 function storeTodo() {
-  window.localStorage.setItem('toDoList', JSON.stringify(toDoList));
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
 
 function retrieveTodo() {
-  toDoList = JSON.parse(window.localStorage.getItem('toDoList') || []);
+  toDoList = JSON.parse(localStorage.getItem('toDoList') || []);
   return toDoList;
 }
-retrieveTodo();
-addSection(toDoList);
+if(localStorage.getItem('toDoList') !== null){
+  retrieveTodo();
+  addSection(toDoList);
+}
+
 
 function taskCount() {
   let actives = retrieveTodo().filter((item) => item["completed"] == false);
