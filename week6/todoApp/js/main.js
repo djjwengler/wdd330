@@ -12,11 +12,11 @@ enter.addEventListener("keyup", function (event) {
 
 let toDoList = [];
 function storeTodo() {
-  localStorage.setItem("toDoList", JSON.stringify(toDoList));
+  window.localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
 
 function retrieveTodo() {
-  toDoList = JSON.parse(localStorage.getItem("toDoList") || []);
+  toDoList = JSON.parse(window.localStorage.getItem('toDoList') || []);
   return toDoList;
 }
 retrieveTodo();
