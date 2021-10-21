@@ -1,170 +1,53 @@
-// // Two here for starters should be good as well...may add more later
-// // /
-// // do a querySelector lookup @param {string} selector The selector passed to querySelector
-// // @return {element} The matching element or null if not found /
-function qs(selector) { }
-// // /
-// // add a touchend event listener to an element for mobile with a click event fallback for desktops @param {string} elementSelector The selector for the element to attach the listener to
-// // * @param {function} callback The callback function to run
+import { retrieveTodo, storeTodo } from "./ls.js";
 
-// // */
-function onTouch(elementSelector, callback) { }
+function removeRed(id) {
+  if (document.getElementById(id).classList.contains("todo__button--select")) {
+    document.getElementById(id).classList.remove("todo__button--select");
+  }
+}
+function addRed(id) {
+  document.getElementById(id).classList.add("todo__button--select");
+}
 
-// // export { taskCount };
+function enterKey() {
+  let enter = document.getElementById("todo__add");
+  enter.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("todo__submit").click();
+    }
+  });
+}
 
+function taskCount() {
+  let actives = retrieveTodo("toDoList").filter(
+    (item) => item["completed"] == false
+  );
+  document.getElementById("todo__count").innerHTML = actives.length;
+}
 
-// // import { toDoList, storeTodo, retrieveTodo } from './modules/ls.js';
-// // import { taskCount } from './modules/utilities.js';
+function getIndex(index) {
+  index = index.slice(4);
+  index = index.slice(0, -8);
+  return index;
+}
 
+function completed(arr, list) {
+  let index = event.target.id;
+  index = index.slice(4);
+  retrieveTodo(list);
+  if (arr[index].completed === false) {
+    arr[index].completed = true;
+  } else {
+    arr[index].completed = false;
+  }
+  storeTodo(list, arr);
+}
 
-// let enter = document.getElementById("todo__add");
-// enter.addEventListener("keyup", function (event) {
-//   if (event.keyCode === 13) {
-//     event.preventDefault();
-//     document.getElementById("todo__submit").click();
-//   }
-// });
+function removeTodo(index, arr, item) {
+    retrieveTodo(item);
+    arr.splice(index, 1);
+    storeTodo(item, arr);
+  }
 
-// let toDoList = [];
-// function storeTodo() {
-//   localStorage.setItem("toDoList", JSON.stringify(toDoList));
-// }
-
-// function retrieveTodo() {
-//   toDoList = JSON.parse(localStorage.getItem("toDoList") || []);
-//   return toDoList;
-// }
-// retrieveTodo();
-// addSection(toDoList);
-
-// function taskCount() {
-//   let actives = retrieveTodo().filter((item) => item["completed"] == false);
-//   document.getElementById("todo__count").innerHTML = actives.length;
-// }
-
-// function removeTodo(index) {
-//   retrieveTodo();
-//   toDoList.splice(index, 1);
-//   storeTodo();
-// }
-
-// function getIndex(index) {
-//   index = index.slice(4);
-//   index = index.slice(0, -8);
-//   return index;
-// }
-
-// function clickRemove() {
-//   let index = event.target.id;
-//   index = getIndex(index);
-//   removeTodo(index);
-//   addSection(toDoList);
-// }
-
-// function strikethrough() {
-//   let index = event.target.id;
-//   let changed = document.getElementById(index + "l");
-//   if (changed.classList.contains("todo__item--strike")) {
-//     changed.classList.remove("todo__item--strike");
-//   } else {
-//     changed.classList.add("todo__item--strike");
-//   }
-//   completed();
-//   taskCount();
-// }
-
-// function completed() {
-//   let index = event.target.id;
-//   index = index.slice(4);
-//   retrieveTodo();
-//   if (toDoList[index].completed === false) {
-//     toDoList[index].completed = true;
-//   } else {
-//     toDoList[index].completed = false;
-//   }
-//   storeTodo();
-// }
-
-// function addTodo() {
-//   let toDo = {
-//     id: new Date(),
-//     content: document.getElementById("todo__add").value,
-//     completed: false,
-//   };
-//   retrieveTodo();
-//   toDoList.push(toDo);
-//   storeTodo();
-//   document.getElementById("todo__add").value = "";
-//   addSection(toDoList);
-//   seeAll();
-// }
-
-// function addSection(arr) {
-//   if (arr.length<1){
-//     document.getElementById("todo__list").innerHTML = "This list is empty!";
-//   }else{
-//   document.getElementById("todo__list").innerHTML = "";
-//   let list = document.getElementById("todo__list");
-//   for (let i = 0; i < arr.length; i++) {
-//     let section = document.createElement("section");
-//     section.innerHTML =
-//       "<input type='checkbox' id='item" +
-//       i +
-//       "' name='item" +
-//       i +
-//       "' onclick='strikethrough()'><label class='todo__label' id='item" +
-//       i +
-//       "l' for='item" +
-//       i +
-//       "'>" +
-//       arr[i].content +
-//       "</label><button onclick='clickRemove()' class='todo__item--remove' id='item" +
-//       i +
-//       "--remove'>X</button><br>";
-//     section.setAttribute("class", "todo__item");
-//     list.appendChild(section);
-//     if (arr[i].completed === true) {
-//       document
-//         .getElementById("item" + i + "l")
-//         .classList.add("todo__item--strike");
-//       document.getElementById("item" + i).setAttribute("checked", "true");
-//     }
-//   }}
-//   taskCount();
-// }
-
-// function removeRed(id) {
-//   if (document.getElementById(id).classList.contains("todo__button--select")) {
-//     document.getElementById(id).classList.remove("todo__button--select");
-//   }
-// }
-// function addRed(id) {
-//   document.getElementById(id).classList.add("todo__button--select");
-// }
-// function seeAll() {
-//   retrieveTodo();
-//   removeRed("complete");
-//   removeRed("active");
-//   addRed("all");
-//   addSection(toDoList);
-// }
-
-// function seeActive() {
-//   retrieveTodo();
-//   let actives = retrieveTodo().filter((item) => item["completed"] == false);
-//   removeRed("all");
-//   removeRed("complete");
-//   addRed("active");
-//   addSection(actives);
-// }
-// function seeComplete() {
-//   retrieveTodo();
-//   let completes = retrieveTodo().filter((item) => item["completed"] == true);
-//   removeRed("all");
-//   removeRed("active");
-//   addRed("complete");
-//   addSection(completes);
-// }
-
-
-
+export { addRed, removeRed, enterKey, taskCount, getIndex, completed, removeTodo };

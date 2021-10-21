@@ -1,7 +1,6 @@
 // import { toDoList, storeTodo, retrieveTodo } from './modules/ls.js';
 // import { taskCount } from './modules/utilities.js';
 
-
 let enter = document.getElementById("todo__add");
 enter.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
@@ -12,18 +11,17 @@ enter.addEventListener("keyup", function (event) {
 
 let toDoList = [];
 function storeTodo() {
-  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+  localStorage.setItem("toDoList", JSON.stringify(toDoList));
 }
 
 function retrieveTodo() {
-  toDoList = JSON.parse(localStorage.getItem('toDoList') || []);
+  toDoList = JSON.parse(localStorage.getItem("toDoList") || []);
   return toDoList;
 }
-if(localStorage.getItem('toDoList') !== null){
+if (localStorage.getItem("toDoList") !== null) {
   retrieveTodo();
   addSection(toDoList);
 }
-
 
 function taskCount() {
   let actives = retrieveTodo().filter((item) => item["completed"] == false);
@@ -79,9 +77,8 @@ function addTodo() {
     content: document.getElementById("todo__add").value,
     completed: false,
   };
-  if(localStorage.getItem('toDoList') !== null){
+  if (localStorage.getItem("toDoList") !== null) {
     retrieveTodo();
-    
   }
   toDoList.push(toDo);
   storeTodo();
@@ -91,36 +88,37 @@ function addTodo() {
 }
 
 function addSection(arr) {
-  if (arr.length<1){
+  if (arr.length < 1) {
     document.getElementById("todo__list").innerHTML = "This list is empty!";
-  }else{
-  document.getElementById("todo__list").innerHTML = "";
-  let list = document.getElementById("todo__list");
-  for (let i = 0; i < arr.length; i++) {
-    let section = document.createElement("section");
-    section.innerHTML =
-      "<input type='checkbox' id='item" +
-      i +
-      "' name='item" +
-      i +
-      "' onclick='strikethrough()'><label class='todo__label' id='item" +
-      i +
-      "l' for='item" +
-      i +
-      "'>" +
-      arr[i].content +
-      "</label><button onclick='clickRemove()' class='todo__item--remove' id='item" +
-      i +
-      "--remove'>X</button><br>";
-    section.setAttribute("class", "todo__item");
-    list.appendChild(section);
-    if (arr[i].completed === true) {
-      document
-        .getElementById("item" + i + "l")
-        .classList.add("todo__item--strike");
-      document.getElementById("item" + i).setAttribute("checked", "true");
+  } else {
+    document.getElementById("todo__list").innerHTML = "";
+    let list = document.getElementById("todo__list");
+    for (let i = 0; i < arr.length; i++) {
+      let section = document.createElement("section");
+      section.innerHTML =
+        "<input type='checkbox' id='item" +
+        i +
+        "' name='item" +
+        i +
+        "' onclick='strikethrough()'><label class='todo__label' id='item" +
+        i +
+        "l' for='item" +
+        i +
+        "'>" +
+        arr[i].content +
+        "</label><button onclick='clickRemove()' class='todo__item--remove' id='item" +
+        i +
+        "--remove'>X</button><br>";
+      section.setAttribute("class", "todo__item");
+      list.appendChild(section);
+      if (arr[i].completed === true) {
+        document
+          .getElementById("item" + i + "l")
+          .classList.add("todo__item--strike");
+        document.getElementById("item" + i).setAttribute("checked", "true");
+      }
     }
-  }}
+  }
   taskCount();
 }
 
@@ -156,4 +154,3 @@ function seeComplete() {
   addRed("complete");
   addSection(completes);
 }
-
