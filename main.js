@@ -5,7 +5,8 @@ const links = [
   { label: "Week4 notes", url: "week4/index.html" },
   { label: "Week5 notes", url: "week5/index.html" },
   { label: "Week6 Challenge #1", url: "week6/index.html" },
-  { label: "Week7 notes", url: "week7/index.html" }
+  { label: "Week7 notes", url: "week7/index.html" },
+  { label: "Week8 notes", url: "week8/index.html" }
 ];
 
 let list = document.getElementById("list");
