@@ -1,39 +1,16 @@
-var ships = [];
-let apiUrl = "https://swapi.dev/api/starships";
+const drumBeat = [
+  {
+    name: "Q",
+    display: "Snare 1",
+    URL: "sounds/kick.wav"
+  }]
 
-
-function createList(array) {
-    let ul = document.getElementById("ships");
-  for (let i = 0; i < array.results.length; i++) {
-    let li = document.createElement("li");
-    li.innerHTML = array.results[i].name;
-    ul.appendChild(li);
-  }
-}
-
-function useApi(url) {
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      createList(data);
-      let prev = data.prev;
-      let next = data.next;
-      function button(url){
-          useApi(url);
-      }
-      document.getElementById('next').addEventListener('click', button(next));
-      document.getElementById('prev').addEventListener('click', button(prev));
-    });
-}
-
-useApi(apiUrl);
-
-// fetch("https://swapi.dev/api/starships")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     for (let i = 0; i < data.results.length; i++) {
-//       let li = document.createElement("li");
-//       li.innerHTML = data.results[i].name;
-//       document.getElementById("ships").appendChild(li);
-//     }
-//   });
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode === 65) {
+    var audio = new Audio(drumBeat[0].URL);
+    // document.getElementById('65').classList.add('playing');
+    document.querySelector('div[data-key = "65"]').classList.add('playing');
+    console.log('playing');
+    audio.play();
+  } 
+});
