@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+    background-image: url('https://source.unsplash.com/Q_RBVFFXR_g/1600x900')
+}
+
+main{
+    background: black;
+    opacity: .8;
+padding: 20px;
+max-width: 400px;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+}
