@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Wengler Movies</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Wengler Movies</h1>
+    <label for="category">What would you like to search for?</label>
+    <select name="category" id="category" onchange="selectOption()">
+      <option selected disabled label="--select an option--"></option>
+      <option value="format">Format</option>
+      <option value="genre">Genre</option>
+      <option value="title">Title</option>
+    </select>
+    <div id="inputType"></div>
+    <input
+      type="submit"
+      value="Search Movies"
+      name="submitSearch"
+      id="submitSearch"
+    />
+
+    <ul id="output"></ul>
+    
+    <a href="movies.html">Browse complete list of Wengler Movies</a>
+    <div id="detail" class="detail">
+      <h2 class="detail__title" id="detail__title"></h2>
+      <h3 class="detail__year" id="detail__year"></h3>
+      <h4 class="detail__format" id="detail__format"></h4>
+      <h4 class="detail__genre" id="detail__genre"></h4>
+      <img class = "detail__img" id='detail__img' src="images/no-image.png" alt="no image available">
+      <p class="detail__desc" id="detail__desc"></p>
+    </div>
+    <!-- <script src="js/movies.js"></script> -->
+    <script src="js/api.js"></script>
+    <script src="js/drop.js"></script>
+  </body>
+</html>

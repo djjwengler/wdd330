@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="login">
+    <label for="username"></label>
+    <input type="email" name="email" id='username' value="user1@email.com">
+    <label for="password"></label>
+    <input type="password" name="password" id='password'>
+    <input type="submit" name="submit" value="Login" id='submitbtn'>
+    </div>
+
+    <div id="token-display"></div>
+
+ 
+
+    <div id="content" class="hidden" >
+      <form name="postForm" >
+        <div>
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="title"
+            required
+          />
+        </div>
+        <div>
+          <label for="content">Content</label>
+          <input
+            type="text"
+            class="form-control"
+            name="content"
+            placeholder="content"
+            required
+          />
+          <input type="submit" name="submitpost" value="Submit Post" id='submitpost'>
+          <ul id="list"></ul>
+        </div>
+
+ <script src="week11.js" type="module"></script>   
+</body>
+</html>
