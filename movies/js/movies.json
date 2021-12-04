@@ -10,10 +10,15 @@
     "format": "DVD"
     },
     {
-    "title": "7th Heaven S1-S3",
+    "title": "7th Heaven",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
+    {
+        "title": "A Christmas Story",
+        "genre": "Christmas/Holidays",
+        "format": "DVD"
+        },
     {
     "title": "A Christmas Wish",
     "genre": "Christmas/Holidays",
@@ -60,7 +65,7 @@
     "format": "DVD"
     },
     {
-    "title": "Andy Griffith S1",
+    "title": "Andy Griffith",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
@@ -80,7 +85,7 @@
     "format": "DVD"
     },
     {
-    "title": "Antman",
+    "title": "Ant-Man",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "Blu-ray"
     },
@@ -115,7 +120,7 @@
     "format": "DVD"
     },
     {
-    "title": "Avatar The Last Airbender",
+    "title": "Avatar: The Last Airbender",
     "genre": "TV Show/Children's",
     "format": "DVD"
     },
@@ -125,7 +130,7 @@
     "format": "Blu-ray"
     },
     {
-    "title": "Back to the Future I",
+    "title": "Back to the Future",
     "genre": "SciFi/Fantasy/Back to the Future",
     "format": "DVD"
     },
@@ -145,7 +150,7 @@
     "format": "DVD"
     },
     {
-    "title": "Bartok",
+    "title": "Bartok the Magnificent",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -205,7 +210,7 @@
     "format": "DVD"
     },
     {
-    "title": "Beverly Hillbillies (4 episodes)",
+    "title": "Beverly Hillbillies",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
@@ -235,7 +240,7 @@
     "format": "DVD"
     },
     {
-    "title": "Blind Side",
+    "title": "The Blind Side",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -250,12 +255,12 @@
     "format": "DVD"
     },
     {
-    "title": "Brady Brides E1-7",
+    "title": "Brady Brides",
     "genre": "TV Shows/Children's/Brady Bunch",
     "format": "DVD"
     },
     {
-    "title": "Brady Bunch Complete",
+    "title": "The Brady Bunch",
     "genre": "TV Shows/Children's/Brady Bunch",
     "format": "DVD"
     },
@@ -290,7 +295,7 @@
     "format": "DVD"
     },
     {
-    "title": "Break Up",
+    "title": "The Break Up",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
@@ -315,17 +320,17 @@
     "format": "DVD"
     },
     {
-    "title": "Bruce Lee's Fists Of Fury",
+    "title": "Fist Of Fury",
     "genre": "Action",
     "format": "DVD"
     },
     {
-    "title": "BYU Choirs - A Thanksgiving of Folk Hymns",
+    "title": "A Thanksgiving of Folk Hymns",
     "genre": "Holidays/Thanksgiving",
     "format": "DVD"
     },
     {
-    "title": "Call the Midwife S1",
+    "title": "Call the Midwife",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
@@ -335,7 +340,7 @@
     "format": "DVD"
     },
     {
-    "title": "Captain America",
+    "title": "Captain America: The First Avenger",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "DVD"
     },
@@ -355,7 +360,7 @@
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Castaway",
+    "title": "Cast Away",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -389,11 +394,7 @@
     "genre": "Children's/Animated",
     "format": "DVD"
     },
-    {
-    "title": "Christmas Story",
-    "genre": "Christmas/Holidays",
-    "format": "DVD"
-    },
+
     {
     "title": "Christmas With The Kranks",
     "genre": "Christmas/Holidays",
@@ -425,37 +426,37 @@
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Cricket on the Hearth",
+    "title": "Cricket on the Hearth",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Frosty Returns",
+    "title": "Frosty Returns",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Frosty the Snowman",
+    "title": "Frosty the Snowman",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Mr Magoo's Christmas Carol",
+    "title": "Mister Magoo's Christmas Carol",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Rudolph the Red-Nosed Reindeer",
+    "title": "Rudolph the Red-Nosed Reindeer",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas Santa Claus is Coming to Town",
+    "title": "Santa Claus is Coming to Town",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
     {
-    "title": "Classic Christmas The Little Drummer Boy",
+    "title": "The Little Drummer Boy",
     "genre": "Christmas/Holidays/Old Classics",
     "format": "DVD"
     },
@@ -570,32 +571,32 @@
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Doctor Who - 9th to 12th",
+    "title": "Doctor Who",
     "genre": "TV Shows/SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Doomsday Preppers S1-S2",
+    "title": "Doomsday Preppers",
     "genre": "TV Shows/Nonfiction",
     "format": "DVD"
     },
     {
-    "title": "Dora the Explorer City of Lost Things",
+    "title": "Dora the Explorer",
     "genre": "TV Shows/Children's",
     "format": "DVD"
     },
     {
-    "title": "Downton Abbey S1-S2",
+    "title": "Downton Abbey",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
     {
-    "title": "Dr Suess The Grinch",
+    "title": "The Grinch",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
     {
-    "title": "Dr Suess The Grinch - original",
+    "title": "Dr. Seuss' The Grinch",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
@@ -620,7 +621,7 @@
     "format": "DVD"
     },
     {
-    "title": "Emma 1998",
+    "title": "Emma",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -645,7 +646,7 @@
     "format": "DVD"
     },
     {
-    "title": "Enders Game",
+    "title": "Ender's Game",
     "genre": "SciFi/Fantasy",
     "format": "DVD"
     },
@@ -660,7 +661,7 @@
     "format": "DVD"
     },
     {
-    "title": "Escape Artist",
+    "title": "The Escape Artist",
     "genre": "TV Show/Drama/Mystery",
     "format": "DVD"
     },
@@ -670,12 +671,12 @@
     "format": "DVD"
     },
     {
-    "title": "Ever After",
+    "title": "Ever After: A Cinderella Story",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
     {
-    "title": "Family Ties S1-S5",
+    "title": "Family Ties",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
@@ -710,7 +711,7 @@
     "format": "DVD"
     },
     {
-    "title": "Ferris Buelers Day Off",
+    "title": "Ferris Bueller's Day Off",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -720,7 +721,7 @@
     "format": "DVD"
     },
     {
-    "title": "Field Of Dreams",
+    "title": "Field of Dreams",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -760,7 +761,7 @@
     "format": "DVD"
     },
     {
-    "title": "Flipper S1",
+    "title": "Flipper",
     "genre": "TV Shows/Children's",
     "format": "DVD"
     },
@@ -780,7 +781,7 @@
     "format": "DVD"
     },
     {
-    "title": "For Love of Money",
+    "title": "For Love or Money",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -790,7 +791,7 @@
     "format": "DVD"
     },
     {
-    "title": "Foyle's War S1-S8",
+    "title": "Foyle's War",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
@@ -825,12 +826,12 @@
     "format": "DVD"
     },
     {
-    "title": "Garfield and Friends E113",
+    "title": "Garfield and Friends",
     "genre": "TV Shows/Children's",
     "format": "DVD"
     },
     {
-    "title": "Get Smart S1",
+    "title": "Get Smart",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
@@ -840,22 +841,22 @@
     "format": "DVD"
     },
     {
-    "title": "Gift Of Love",
+    "title": "The Gift Of Love",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
     {
-    "title": "Gilmore Girls S1-S7",
+    "title": "Gilmore Girls",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
     {
-    "title": "Glad Christmas Tidings Motab",
+    "title": "Glad Christmas Tidings",
     "genre": "Christmas/Holidays/Church Christmas",
     "format": "DVD"
     },
     {
-    "title": "God So Loved the World Motab",
+    "title": "God So Loved the World",
     "genre": "Christmas/Holidays/Church Christmas",
     "format": "DVD"
     },
@@ -865,7 +866,7 @@
     "format": "DVD"
     },
     {
-    "title": "Goldbergs S1-S2",
+    "title": "Goldbergs",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
@@ -935,22 +936,22 @@
     "format": "DVD"
     },
     {
-    "title": "Hunger Games 1 The Hunger Games",
+    "title": "The Hunger Games",
     "genre": "SciFi/Fantasy/Hunger Games",
     "format": "Blu-ray"
     },
     {
-    "title": "Hunger Games 2 Catching Fire",
+    "title": "The Hunger Games: Catching Fire",
     "genre": "SciFi/Fantasy/Hunger Games",
     "format": "DVD"
     },
     {
-    "title": "Hunger Games 3 Mockingjay P1",
+    "title": "The Hunger Games: Mockingjay Part 1",
     "genre": "SciFi/Fantasy/Hunger Games",
     "format": "DVD"
     },
     {
-    "title": "Hunger Games 3 Mockingjay P2",
+    "title": "The Hunger Games: Mockingjay Part 2",
     "genre": "SciFi/Fantasy/Hunger Games",
     "format": "DVD"
     },
@@ -975,82 +976,82 @@
     "format": "DVD"
     },
     {
-    "title": "Hitchcock Champagne",
+    "title": "Champagne",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock Easy Virtue",
+    "title": "Easy Virtue",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock Jamaica Inn",
+    "title": "Jamaica Inn",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock Juno and the Paycock",
+    "title": "Juno and the Paycock",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Cheney Vase",
+    "title": "The Cheney Vase",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Farmer's Wife",
+    "title": "The Farmer's Wife",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Manxman",
+    "title": "The Manxman",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Ring",
+    "title": "The Ring",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Skin Game",
+    "title": "The Skin Game",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock The Sorcerer's Apprentice",
+    "title": "The Sorcerer's Apprentice",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchcock Young and Innocent",
+    "title": "Young and Innocent",
     "genre": "Drama/Mystery/Hitchcock",
     "format": "DVD"
     },
     {
-    "title": "Hitchhikers Guide to the Galaxy",
+    "title": "The Hitchhiker's Guide to the Galaxy",
     "genre": "SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Hobbit 1 An Unexpected Journey",
+    "title": "Hobbit: An Unexpected Journey",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
     {
-    "title": "Hobbit 2 Desolation of Smaug",
+    "title": "Hobbit: Desolation of Smaug",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Hobbit 3 Battle of the Five Armies P1",
+    "title": "Hobbit: The Battle of the Five Armies Part 1",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
     {
-    "title": "Hobbit 3 Battle of the Five Armies P2",
+    "title": "Hobbit: The Battle of the Five Armies Part 2",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
@@ -1060,7 +1061,7 @@
     "format": "DVD"
     },
     {
-    "title": "Home Alone 2",
+    "title": "Home Alone 2: Lost in New York",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
@@ -1115,42 +1116,42 @@
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 1 Harry Potter and the Sorcerer's Stone",
+    "title": "Harry Potter and the Sorcerer's Stone",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 2 Harry Potter and the Chamber of Secrets",
+    "title": "Harry Potter and the Chamber of Secrets",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 3 Harry Potter Prisoner of Azkaban",
+    "title": "Harry Potter Prisoner of Azkaban",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 4 Harry Potter Goblet of Fire",
+    "title": "Harry Potter Goblet of Fire",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 5 Harry Potter Order of the Phoenix",
+    "title": "Harry Potter Order of the Phoenix",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 6 Harry Potter Half Blood Prince",
+    "title": "Harry Potter Half Blood Prince",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "DVD"
     },
     {
-    "title": "Harry Potter 7 Harry Potter Deathly Hallows P1",
+    "title": "Harry Potter Deathly Hallows Part 1",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Harry Potter 7 Harry Potter Deathly Hallows P2",
+    "title": "Harry Potter Deathly Hallows Part 2",
     "genre": "SciFi/Fantasy/Harry Potter",
     "format": "Blu-ray"
     },
@@ -1200,7 +1201,7 @@
     "format": "DVD"
     },
     {
-    "title": "Invicible Us",
+    "title": "Invincible",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -1210,12 +1211,7 @@
     "format": "DVD"
     },
     {
-    "title": "It's a Wonderful Life - B&W",
-    "genre": "Christmas/Holiday",
-    "format": "Blu-ray"
-    },
-    {
-    "title": "It's a Wonderful Life - Color",
+    "title": "It's a Wonderful Life",
     "genre": "Christmas/Holiday",
     "format": "Blu-ray"
     },
@@ -1225,7 +1221,7 @@
     "format": "DVD"
     },
     {
-    "title": "Jane Austen Regrets",
+    "title": "Miss Austen Regrets",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -1265,7 +1261,7 @@
     "format": "DVD"
     },
     {
-    "title": "Joan Of Arc 1999",
+    "title": "Joan Of Arc",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -1275,7 +1271,7 @@
     "format": "DVD"
     },
     {
-    "title": "Joseph Commemoration",
+    "title": "Joseph Smith Commemoration",
     "genre": "Church/Church History",
     "format": "DVD"
     },
@@ -1295,7 +1291,7 @@
     "format": "DVD"
     },
     {
-    "title": "Julie and Julia",
+    "title": "Julie & Julia",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -1320,7 +1316,7 @@
     "format": "DVD"
     },
     {
-    "title": "Kicking And Screaming",
+    "title": "Kicking & Screaming",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -1355,7 +1351,7 @@
     "format": "DVD"
     },
     {
-    "title": "Last Airbender",
+    "title": "The Last Airbender",
     "genre": "Children's/SciFi/Fantasy",
     "format": "Blu-ray/DVD"
     },
@@ -1390,12 +1386,12 @@
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Les Miserables",
+    "title": "Les Misérables",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
     {
-    "title": "Les Miserables - 1998",
+    "title": "Les Miserables",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
@@ -1405,12 +1401,12 @@
     "format": "DVD"
     },
     {
-    "title": "Librarians",
+    "title": "The Librarians",
     "genre": "TV Shows/SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Life is Beautiful",
+    "title": "La vita è bella",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -1420,7 +1416,7 @@
     "format": "DVD"
     },
     {
-    "title": "Little House on the Prairie S1-S2",
+    "title": "Little House on the Prairie",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
@@ -1440,17 +1436,17 @@
     "format": "DVD"
     },
     {
-    "title": "Lord of the Rings 1 Fellowship of the Ring",
+    "title": "Lord of the Rings Fellowship of the Ring",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
     {
-    "title": "Lord of the Rings 2 Two Towers",
+    "title": "Lord of the Rings Two Towers",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
     {
-    "title": "Lord of the Rings 3 Return of the King",
+    "title": "Lord of the Rings Return of the King",
     "genre": "SciFi/Fantasy/Lord of the Rings",
     "format": "DVD"
     },
@@ -1485,7 +1481,7 @@
     "format": "DVD"
     },
     {
-    "title": "Marvels The Avengers",
+    "title": "The Avengers",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "Blu-ray/DVD"
     },
@@ -1520,7 +1516,7 @@
     "format": "DVD"
     },
     {
-    "title": "Miracle On 34Th Street - Original B&W",
+    "title": "Miracle On 34Th Street",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
@@ -1550,7 +1546,7 @@
     "format": "DVD"
     },
     {
-    "title": "Miss Peregrines Home",
+    "title": "Miss Peregrine's Home for Peculiar Children",
     "genre": "Children's/SciFi/Fantasy",
     "format": "DVD"
     },
@@ -1575,7 +1571,7 @@
     "format": "DVD"
     },
     {
-    "title": "Mr and Mrs Smith",
+    "title": "Mr. and Mrs. Smith",
     "genre": "Action",
     "format": "DVD"
     },
@@ -1590,12 +1586,12 @@
     "format": "DVD"
     },
     {
-    "title": "Mr Magoriums Magic Emporium",
+    "title": "Mr. Magorium's Wonder Emporium",
     "genre": "Children's/SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Mr Peabody And Sherman",
+    "title": "Mr. Peabody & Sherman",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -1610,7 +1606,7 @@
     "format": "DVD"
     },
     {
-    "title": "Mythbusters Pilots",
+    "title": "MythBusters",
     "genre": "TV Shows/Nonfiction",
     "format": "DVD"
     },
@@ -1635,7 +1631,7 @@
     "format": "DVD"
     },
     {
-    "title": "National Lampoons Christmas Vacation",
+    "title": "National Lampoon's Christmas Vacation",
     "genre": "Christmas/Holidays",
     "format": "DVD"
     },
@@ -1650,7 +1646,7 @@
     "format": "DVD"
     },
     {
-    "title": "Neverending Story",
+    "title": "The NeverEnding Story",
     "genre": "Children's/SciFi/Fantasy",
     "format": "DVD"
     },
@@ -1660,17 +1656,17 @@
     "format": "DVD"
     },
     {
-    "title": "Night At the Museum 1",
+    "title": "Night At the Museum",
     "genre": "Children's/SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Night at the Museum 2",
+    "title": "Night at the Museum: Battle of the Smithsonian",
     "genre": "Children's/SciFi/Fantasy",
     "format": "DVD"
     },
     {
-    "title": "Night at the Museum 3",
+    "title": "Night at the Museum: Secret of the Tomb",
     "genre": "Children's/SciFi/Fantasy",
     "format": "Blu-ray/DVD"
     },
@@ -1690,7 +1686,7 @@
     "format": "DVD"
     },
     {
-    "title": "North and South",
+    "title": "North & South",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -1710,12 +1706,12 @@
     "format": "DVD"
     },
     {
-    "title": "Oceans Twelve",
+    "title": "Ocean's Twelve",
     "genre": "Action",
     "format": "DVD"
     },
     {
-    "title": "Office - Complete",
+    "title": "Office",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
@@ -1750,17 +1746,17 @@
     "format": "DVD"
     },
     {
-    "title": "Park and Recreation S2 Hunting Trip",
+    "title": "Parks and Recreation",
     "genre": "TV Shows/Comedy",
     "format": "DVD"
     },
     {
-    "title": "Partridge Family S1",
+    "title": "Partridge Family",
     "genre": "TV Shows/Children's",
     "format": "DVD"
     },
     {
-    "title": "Paul Blart Mall Cop.mp4",
+    "title": "Paul Blart Mall Cop",
     "genre": "Children's/Comedy",
     "format": "DVD"
     },
@@ -1770,12 +1766,7 @@
     "format": "DVD"
     },
     {
-    "title": "Pearl Harbor P1",
-    "genre": "Drama/Mystery",
-    "format": "DVD"
-    },
-    {
-    "title": "Pearl Harbor P2",
+    "title": "Pearl Harbor",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -1790,27 +1781,27 @@
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Penguins of Madagascar Christmas Caper",
+    "title": "Madagascar Penguins in a Christmas Caper",
     "genre": "TV Shows/Children's/Penguins of Madagascar",
     "format": "DVD"
     },
     {
-    "title": "Penguins Of Madagascar Zombie",
+    "title": "Penguins of Madagascar: I Was a Penguin Zombie",
     "genre": "TV Shows/Children's/Penguins of Madagascar",
     "format": "DVD"
     },
     {
-    "title": "Perfect Man",
+    "title": "The Perfect Man",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
     {
-    "title": "Persuasion 1995",
+    "title": "Persuasion",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
     {
-    "title": "Persuasion 2008",
+    "title": "Persuasion 1998",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -1820,37 +1811,37 @@
     "format": "DVD"
     },
     {
-    "title": "Phantom of the Opera",
+    "title": "The Phantom of the Opera",
     "genre": "Period/Chick Flick",
     "format": "DVD"
     },
     {
-    "title": "Phineas and Ferb Animal Agents",
+    "title": "Phineas & Ferb Animal Agents",
     "genre": "TV Shows/Children's/Phineas and Ferb",
     "format": "DVD"
     },
     {
-    "title": "Phineas and Ferb Mission Marvel",
+    "title": "Phineas & Ferb Mission Marvel",
     "genre": "TV Shows/Children's/Phineas and Ferb",
     "format": "DVD"
     },
     {
-    "title": "Phineas and Ferb Perry Files",
+    "title": "Phineas & Ferb: The Perry Files",
     "genre": "TV Shows/Children's/Phineas and Ferb",
     "format": "DVD"
     },
     {
-    "title": "Phineas and Ferb The Daze of Summer",
+    "title": "Phineas & Ferb The Daze of Summer",
     "genre": "TV Shows/Children's/Phineas and Ferb",
     "format": "DVD"
     },
     {
-    "title": "Phineas and Ferb The Fast and the Phineas",
+    "title": "Phineas & Ferb The Fast and the Phineas",
     "genre": "TV Shows/Children's/Phineas and Ferb",
     "format": "DVD"
     },
     {
-    "title": "PIlates",
+    "title": "Pilates",
     "genre": "Nonfiction/Workout",
     "format": "DVD"
     },
@@ -1860,17 +1851,17 @@
     "format": "DVD"
     },
     {
-    "title": "Pirates of the Caribbean 1 Curse of the Black Pearl",
+    "title": "Pirates of the Caribbean Curse of the Black Pearl",
     "genre": "SciFi/Fantasy/Pirates of the Caribbean",
     "format": "DVD"
     },
     {
-    "title": "Pirates of the Caribbean 2 Dead Man's Chest",
+    "title": "Pirates of the Caribbean Dead Man's Chest",
     "genre": "SciFi/Fantasy/Pirates of the Caribbean",
     "format": "DVD"
     },
     {
-    "title": "Pirates of the Caribbean 3 At World's End",
+    "title": "Pirates of the Caribbean At World's End",
     "genre": "SciFi/Fantasy/Pirates of the Caribbean",
     "format": "DVD"
     },
@@ -1880,7 +1871,7 @@
     "format": "DVD"
     },
     {
-    "title": "Planes Fire And Rescue",
+    "title": "Planes: Fire & Rescue",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -1895,17 +1886,12 @@
     "format": "DVD"
     },
     {
-    "title": "Presidents And Prophets",
+    "title": "Presidents and Prophets",
     "genre": "Church/Heartfelt",
     "format": "DVD"
     },
     {
-    "title": "Pride and Prejudice 1995 P1",
-    "genre": "Period/Chick Flick/Jane Austenesque",
-    "format": "DVD"
-    },
-    {
-    "title": "Pride and Prejudice 1995 P2",
+    "title": "Pride and Prejudice",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -1930,7 +1916,7 @@
     "format": "DVD"
     },
     {
-    "title": "Prince of Persia",
+    "title": "Prince of Persia: The Sands of Time",
     "genre": "Action",
     "format": "DVD"
     },
@@ -1950,7 +1936,7 @@
     "format": "DVD"
     },
     {
-    "title": "Psych the Musical",
+    "title": "Psych: The Musical",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -1980,7 +1966,7 @@
     "format": "DVD"
     },
     {
-    "title": "Restoration",
+    "title": "The Restoration",
     "genre": "Church/Heartfelt",
     "format": "DVD"
     },
@@ -1990,7 +1976,7 @@
     "format": "DVD"
     },
     {
-    "title": "Return To Nims Island",
+    "title": "Return To Nim's Island",
     "genre": "Children's/Drama/Mystery",
     "format": "DVD"
     },
@@ -2010,7 +1996,7 @@
     "format": "DVD"
     },
     {
-    "title": "Road Trip Nation (3 seasons)",
+    "title": "Road Trip Nation",
     "genre": "Nonfiction",
     "format": "DVD"
     },
@@ -2020,7 +2006,7 @@
     "format": "DVD"
     },
     {
-    "title": "Rocker",
+    "title": "The Rocker",
     "genre": "Comedy",
     "format": "DVD"
     },
@@ -2050,7 +2036,7 @@
     "format": "DVD"
     },
     {
-    "title": "Sandlot",
+    "title": "The Sandlot",
     "genre": "Children's/Comedy",
     "format": "DVD"
     },
@@ -2100,12 +2086,12 @@
     "format": "DVD"
     },
     {
-    "title": "Secret",
+    "title": "The Secret",
     "genre": "Nonfiction",
     "format": "DVD"
     },
     {
-    "title": "Secret Garden",
+    "title": "The Secret Garden",
     "genre": "Children's/Drama/Mystery",
     "format": "DVD"
     },
@@ -2120,12 +2106,12 @@
     "format": "DVD"
     },
     {
-    "title": "Secrets of Nimh",
+    "title": "Secret of NIMH",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
     {
-    "title": "Sense and Sensibility 1995",
+    "title": "Sense and Sensibility",
     "genre": "Period/Chick Flick/Jane Austenesque",
     "format": "DVD"
     },
@@ -2220,12 +2206,12 @@
     "format": "DVD"
     },
     {
-    "title": "Smash S1-S2",
+    "title": "Smash",
     "genre": "TV Shows/Drama/Mystery",
     "format": "DVD"
     },
     {
-    "title": "Snow White",
+    "title": "Snow White and the Seven Dwarfs",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -2245,17 +2231,17 @@
     "format": "DVD"
     },
     {
-    "title": "Spiderman 1",
+    "title": "Spider-Man",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "DVD"
     },
     {
-    "title": "Spiderman 2",
+    "title": "Spider-Man 2",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "DVD"
     },
     {
-    "title": "Spiderman Homecoming",
+    "title": "Spider-Man Homecoming",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "Blu-ray/DVD"
     },
@@ -2275,57 +2261,57 @@
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 1 The Phantom Menace",
+    "title": "Star Wars: The Phantom Menace",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 2 Attack of the Clones",
+    "title": "Star Wars: Attack of the Clones",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 3 Revenge of the Sith",
+    "title": "Star Wars: Revenge of the Sith",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 3a Solo",
+    "title": "Star Wars: Solo",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 3b Rogue One",
+    "title": "Star Wars: Rogue One",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 4 A New Hope",
+    "title": "Star Wars: A New Hope",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 5 Empire Strikes Back",
+    "title": "Star Wars: Empire Strikes Back",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 6 Return of the Jedi",
+    "title": "Star Wars: Return of the Jedi",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars Episode 7 The Force Awakens",
+    "title": "Star Wars: The Force Awakens",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "Blu-ray/DVD"
     },
     {
-    "title": "Star Wars Episode 8 The Last Jedi",
+    "title": "Star Wars: Episode VIII The Last Jedi",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
     {
-    "title": "Star Wars E9 The Rise of Skywalker",
+    "title": "Star Wars: The Rise of Skywalker",
     "genre": "SciFi/Fantasy/Star Wars",
     "format": "DVD"
     },
@@ -2335,22 +2321,12 @@
     "format": "DVD"
     },
     {
-    "title": "Stories Of Christmas Mr. Krueger's Christmas",
+    "title": "Nora's Christmas Gift",
     "genre": "Christmas/Holidays/Church Christmas",
     "format": "DVD"
     },
     {
-    "title": "Stories Of Christmas Nora's Christmas Gift",
-    "genre": "Christmas/Holidays/Church Christmas",
-    "format": "DVD"
-    },
-    {
-    "title": "Stories Of Christmas The Nativity",
-    "genre": "Christmas/Holidays/Church Christmas",
-    "format": "DVD"
-    },
-    {
-    "title": "Stories Of Christmas The Other Wise Man",
+    "title": "The Other Wise Man",
     "genre": "Christmas/Holidays/Church Christmas",
     "format": "DVD"
     },
@@ -2380,7 +2356,7 @@
     "format": "DVD"
     },
     {
-    "title": "Surfs Up",
+    "title": "Surf's Up",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -2395,7 +2371,7 @@
     "format": "DVD"
     },
     {
-    "title": "Twilight Twilight",
+    "title": "Twilight",
     "genre": "Period/Chick Flick/Twilights",
     "format": "DVD"
     },
@@ -2410,17 +2386,17 @@
     "format": "DVD"
     },
     {
-    "title": "Twilight Breaking Dawn P1",
+    "title": "Twilight Breaking Dawn Part 1",
     "genre": "Period/Chick Flick/Twilights",
     "format": "DVD"
     },
     {
-    "title": "T4 Breaking Dawn P2",
+    "title": "Twilight Breaking Dawn Part 2",
     "genre": "Period/Chick Flick/Twilights",
     "format": "DVD"
     },
     {
-    "title": "Tales Of Despereaux",
+    "title": "The Tale of Despereaux",
     "genre": "Children's/Animated",
     "format": "DVD"
     },
@@ -2510,7 +2486,7 @@
     "format": "DVD"
     },
     {
-    "title": "Ultimate Gift",
+    "title": "The Ultimate Gift",
     "genre": "Drama/Mystery",
     "format": "DVD"
     },
@@ -2550,12 +2526,12 @@
     "format": "DVD"
     },
     {
-    "title": "Wallace and Gromit A Close Shave",
+    "title": "A Close Shave",
     "genre": "TV Shows/Children's/Wallace and Gromit",
     "format": "DVD"
     },
     {
-    "title": "Wallace and Gromit A Grand Day Out",
+    "title": "A Grand Day Out",
     "genre": "TV Shows/Children's/Wallace and Gromit",
     "format": "DVD"
     },
@@ -2620,7 +2596,7 @@
     "format": "DVD"
     },
     {
-    "title": "Willy Wonka - Original",
+    "title": "Willy Wonka",
     "genre": "Children's/Comedy",
     "format": "DVD"
     },

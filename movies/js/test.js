@@ -63,7 +63,7 @@ function getmdbAPI(search){
   getMovies(mdbURL(search)).then(function (data) {
       console.log(data.results);
       let results = data.results;
-      if (results[0]){
+      if (results[0] && targetGenre != 'TV Shows'){
       targetDesc = results[0].overview;}
       console.log(targetDesc);
   })}
@@ -92,31 +92,11 @@ async function makeRequest(url) {
   async function searchIMDB() {
     try {
       const data = await makeRequest(rapidURL(search));
-      if(data.length>0){
-        if (data[0].Title === search){
-          targetYear = data[0].Year;
-      targetImg = data[0].Poster;
-        } else {
-          for(let i= 0; i<data.length; i++){
-            if (data[i].Title === search){
-              targetYear = data[i].Year;
-          targetImg = data[i].Poster;
-          break;
-        }}}
-
-       if (targetYear ==='') {
-      targetYear = data[0].Year;
-      targetImg = data[0].Poster;}
-      
-      }
-    
-        
-      
-      // if (data[0]){
-      //   targetYear = data[0].Year;
-      //   targetImg = data[0].Poster;}
-      //   console.log(targetYear);
-      //   console.log(targetImg);
+      if (data[0]){
+        targetYear = data[0].Year;
+        targetImg = data[0].Poster;}
+        console.log(targetYear);
+        console.log(targetImg);
 
       console.log(data);
     } catch (error) {
@@ -152,14 +132,7 @@ async function makeRequest(url) {
   }
 
   function buildSearchResults(arr){
-    if (arr.length<1){
-
-    }
     var ul = document.getElementById("output");
-    ul.setAttribute("class", "result__list");
-    if (arr.length<1){
-      ul.innerHTML = "There are no results";
-    } else {
     ul.innerHTML = "";
     for (var i = 0; i < arr.length; i++) {
       var li = document.createElement("li");
@@ -168,9 +141,8 @@ async function makeRequest(url) {
       li.setAttribute("onclick", "toggleHide(this)");
       li.setAttribute("data-genre", arr[i].genre);
       li.setAttribute("data-format", arr[i].format);
-      li.setAttribute("class", "result__item")
       ul.appendChild(li);
-    }}
+    }
   }
 
   function getTargets(targetID){
@@ -182,19 +154,16 @@ async function makeRequest(url) {
   }
 
   function toggleX() {
-    document.getElementById('detail').classList.toggle("hidden");
-    document.getElementById('search').classList.toggle("hidden");
-
+    document.getElementById('detail').classList.toggle("hidden");;
     }
 
   function toggleHide(el) {
-    resetTargets();
+    toggleX();
     targetID =  el.id;
     getTargets(targetID);
     getRapidAPI(targetName);
     getmdbAPI(targetName);
-    setTimeout(function(){ displayMovie(); toggleX(); }, 700);
-    
+    displayMovie();
     }
 
 function showMovies(url = "js/movies.json") {
@@ -211,7 +180,6 @@ function showMovies(url = "js/movies.json") {
   });
 }
 
-if (document.getElementById("submitSearch")){
 document.getElementById("submitSearch").addEventListener("click", () => {
     showMovies();
-  })};
+  });

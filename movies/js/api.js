@@ -1,108 +1,212 @@
-fetch("js/movies.json")
-  .then((response) => response.json())
-  .then((wMovies) => {
-    function fetchAll() {
-      let moviedbURL =
-        "https://api.themoviedb.org/3/search/movie?api_key=af59e0636be329b2b86aa5e89182d8bb&query=";
-      let imdbURLPartial =
-        "https://movie-database-imdb-alternative.p.rapidapi.com/?s=";
+let targetID = 0;
+let targetName = 'Movie';
+let targetGenre = 'Genre';
+let targetDesc = 'Sorry, no description could be found';
+let targetImg = 'images/no-image.png';
+let targetYear = '';
+let targetFormat = 'Format';
 
-      let category = document.getElementById("searchInput").name;
+function resetTargets(){
+targetName = 'Movie';
+targetGenre = 'Genre';
+targetDesc = 'Sorry, no description could be found';
+targetImg = 'images/no-image.png';
+targetYear = '';
+targetFormat = 'Format';
+}
+function displayMovie(){
+    document.getElementById('detail__title').innerHTML = targetName;
+    document.getElementById('detail__year').innerHTML = targetYear;
+    document.getElementById('detail__format').innerHTML = targetFormat;
+    document.getElementById('detail__genre').innerHTML = targetGenre;
+    document.getElementById('detail__img').setAttribute("src", targetImg);
+    document.getElementById('detail__desc').innerHTML = targetDesc;
+}
 
-      let searchInput = document.getElementById("searchInput").value;
+displayMovie();
 
-      function filterMovies() {
-        let wMoviesResults;
-        if (category == "genre") {
-          wMoviesResults = wMovies.filter((x) => x.genre.includes(searchInput));
-        } else if (category == "format") {
-          wMoviesResults = wMovies.filter((x) =>
-            x.format.includes(searchInput)
-          );
-        } else if (category == "title") {
-          wMoviesResults = wMovies.filter((x) => x.title.includes(searchInput));
-        }
-        return wMoviesResults;
+function getJSON(url) {
+  return fetch(url)
+    .then(function (response) {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      } else {
+        return response.json();
       }
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
 
-      let wMoviesResults = filterMovies();
-      console.log(wMoviesResults);
+function getMovies(url) {
+  return getJSON(url);
+}
 
-      var ul = document.getElementById("output");
-      ul.innerHTML = "";
-      for (var i = 0; i < wMoviesResults.length; i++) {
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(wMoviesResults[i].title));
-        ul.appendChild(li);
+function getIMDB(url) {
+  return getJSON(url);
+}
+
+let moviedbURL =
+  "https://api.themoviedb.org/3/search/movie?api_key=af59e0636be329b2b86aa5e89182d8bb&query=";
+  function mdbURL(searchInput) {
+    let inputURL1 = searchInput.replace(/\s/g, "+");
+    let newURL = moviedbURL + inputURL1 + "&page=1";
+    return newURL;
+  }
+let imdbURLPartial =
+  "https://movie-database-imdb-alternative.p.rapidapi.com/?s=";
+  function rapidURL(searchInput) {
+    let inputURL2 = searchInput.replace(/\s/g, "%20");
+    let newURL = imdbURLPartial + inputURL2 + "&r=json";
+    return newURL;
+  }
+function getmdbAPI(search){
+  getMovies(mdbURL(search)).then(function (data) {
+      console.log(data.results);
+      let results = data.results;
+      if (results[0]){
+      targetDesc = results[0].overview;}
+      console.log(targetDesc);
+  })}
+
+function getRapidAPI(search){
+async function makeRequest(url) {
+    let options = {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+        "x-rapidapi-key":
+          "dd5d52b15cmshcbbd06022186b27p15ee94jsn4e078cca84a1",
+      },
+    };
+
+    const response = await fetch(url, options);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(`${data.status}: ${data.message}`);
+    } else return data.Search;
+  }
+
+  let imdbData = "";
+
+  async function searchIMDB() {
+    try {
+      const data = await makeRequest(rapidURL(search));
+      if(data.length>0){
+        if (data[0].Title === search){
+          targetYear = data[0].Year;
+      targetImg = data[0].Poster;
+        } else {
+          for(let i= 0; i<data.length; i++){
+            if (data[i].Title === search){
+              targetYear = data[i].Year;
+          targetImg = data[i].Poster;
+          break;
+        }}}
+
+       if (targetYear ==='') {
+      targetYear = data[0].Year;
+      targetImg = data[0].Poster;}
+      
       }
+    
+        
+      
+      // if (data[0]){
+      //   targetYear = data[0].Year;
+      //   targetImg = data[0].Poster;}
+      //   console.log(targetYear);
+      //   console.log(targetImg);
 
-      function createURL1() {
-        let inputURL1 = searchInput.replace(/\s/g, "+");
-        let newURL = moviedbURL + inputURL1 + "&page=1";
-        return newURL;
-      }
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  searchIMDB();
+}
 
-      function createURL2() {
-        let inputURL2 = searchInput.replace(/\s/g, "%20");
-        let newURL = imdbURLPartial + inputURL2 + "&r=json";
-        return newURL;
-      }
 
-      fetch(createURL1())
-        .then((response) => response.json())
-        .then((data) => {
-          let results = data.results;
-          // var ul = document.getElementById("output2");
-          // ul.innerHTML = "";
-          // for (var i = 0; i < results.length; i++) {
-          //   var li = document.createElement("li");
-          //   li.appendChild(document.createTextNode(results[i].title));
-          //   ul.appendChild(li);
-          // }
-        });
+  function filterMovies(arr, searchInput, category) {
+    let wMoviesResults;
+    if (category == "genre") {
+      wMoviesResults = arr.filter((x) => x.genre.includes(searchInput));
+    } else if (category == "format") {
+      wMoviesResults = arr.filter((x) =>
+        x.format.includes(searchInput)
+      );
+    } else if (category == "title") {
+      wMoviesResults = arr.filter((x) => x.title.includes(searchInput));
+    }
+    return wMoviesResults;
+  }
 
-      async function makeRequest(url) {
-        let options = {
-          method: "GET",
-          headers: {
-            "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
-            "x-rapidapi-key":
-              "dd5d52b15cmshcbbd06022186b27p15ee94jsn4e078cca84a1",
-          },
-        };
+  function getCategory(){
+    let category = document.getElementById("searchInput").name;
+    return category;
+  }
 
-        const response = await fetch(url, options);
-        const data = await response.json();
+  function getSearchValue(){
+    searchInput = document.getElementById("searchInput").value;
+    return searchInput;
+  }
 
-        if (!response.ok) {
-          // console.log(response);
-          throw new Error(`${data.status}: ${data.message}`);
-        } else return data.Search;
-      }
+  function buildSearchResults(arr){
+    var ul = document.getElementById("output");
+    ul.setAttribute("class", "result__list");
+    ul.innerHTML = "";
+    for (var i = 0; i < arr.length; i++) {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(arr[i].title));
+      li.setAttribute("id", i);
+      li.setAttribute("onclick", "toggleHide(this)");
+      li.setAttribute("data-genre", arr[i].genre);
+      li.setAttribute("data-format", arr[i].format);
+      li.setAttribute("class", "result__item")
+      ul.appendChild(li);
+    }
+  }
 
-      let imdbData = "";
+  function getTargets(targetID){
+    let target = document.getElementById(targetID);
+    targetName = target.innerHTML;
+    targetGenre = target.getAttribute('data-genre');
+    targetFormat = target.getAttribute('data-format');
+    
+  }
 
-      async function searchIMDB() {
-        try {
-          const data = await makeRequest(createURL2());
-          // var ul = document.getElementById("output");
-          // ul.innerHTML = "";
-          // for (var i = 0; i < data.length; i++) {
-          //   var li = document.createElement("li");
-          //   li.appendChild(document.createTextNode(data[i].Title));
-          //   ul.appendChild(li);
-          // }
-        } catch (error) {
-          console.log(error);
-        }
-      }
-      searchIMDB();
+  function toggleX() {
+    document.getElementById('detail').classList.toggle("hidden");
+    document.getElementById('search').classList.toggle("hidden");
+
     }
 
-    document.getElementById("submitSearch").addEventListener("click", () => {
-      fetchAll();
-    });
+  function toggleHide(el) {
+    resetTargets();
+    targetID =  el.id;
+    getTargets(targetID);
+    getRapidAPI(targetName);
+    getmdbAPI(targetName);
+    setTimeout(function(){ displayMovie(); toggleX(); }, 600);
+    
+    }
 
-    // let wenglerMovies = require('./movies.json');
-    // console.log(wenglerMovies);
+function showMovies(url = "js/movies.json") {
+  getMovies(url).then(function (wMovies) {
+    //wMovies contains the array
+    let category = getCategory();
+
+    let searchInput = getSearchValue();
+
+    let wMoviesResults = filterMovies(wMovies, searchInput, category);
+
+    buildSearchResults(wMoviesResults);
+
+  });
+}
+
+document.getElementById("submitSearch").addEventListener("click", () => {
+    showMovies();
   });
