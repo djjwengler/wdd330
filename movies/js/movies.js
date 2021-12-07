@@ -43,10 +43,6 @@ function getMovies(url) {
   return getJSON(url);
 }
 
-function getIMDB(url) {
-  return getJSON(url);
-}
-
 let moviedbURL =
   "https://api.themoviedb.org/3/search/movie?api_key=af59e0636be329b2b86aa5e89182d8bb&query=";
   function mdbURL(searchInput) {
@@ -111,14 +107,6 @@ async function makeRequest(url) {
       targetImg = data[0].Poster;}
       
       }
-    
-        
-      
-      // if (data[0]){
-      //   targetYear = data[0].Year;
-      //   targetImg = data[0].Poster;}
-      //   console.log(targetYear);
-      //   console.log(targetImg);
 
       console.log(data);
     } catch (error) {
