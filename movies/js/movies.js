@@ -1,26 +1,28 @@
-let targetID = 0;
-let targetName = 'Movie';
-let targetGenre = 'Genre';
-let targetDesc = 'Sorry, no description could be found';
-let targetImg = 'images/no-image.png';
-let targetYear = '';
-let targetFormat = 'Format';
+import { buildSearchResults, getSearchValue, getCategory, filterMovies } from "./utilities.js";
 
-function resetTargets(){
-targetName = 'Movie';
-targetGenre = 'Genre';
-targetDesc = 'Sorry, no description could be found';
-targetImg = 'images/no-image.png';
-targetYear = '';
-targetFormat = 'Format';
+let targetID = 0;
+let targetName = "Movie";
+let targetGenre = "Genre";
+let targetDesc = "Sorry, no description could be found";
+let targetImg = "images/no-image.png";
+let targetYear = "";
+let targetFormat = "Format";
+
+function resetTargets() {
+  targetName = "Movie";
+  targetGenre = "Genre";
+  targetDesc = "Sorry, no description could be found";
+  targetImg = "images/no-image.png";
+  targetYear = "";
+  targetFormat = "Format";
 }
-function displayMovie(){
-    document.getElementById('detail__title').innerHTML = targetName;
-    document.getElementById('detail__year').innerHTML = targetYear;
-    document.getElementById('detail__format').innerHTML = targetFormat;
-    document.getElementById('detail__genre').innerHTML = targetGenre;
-    document.getElementById('detail__img').setAttribute("src", targetImg);
-    document.getElementById('detail__desc').innerHTML = targetDesc;
+function displayMovie() {
+  document.getElementById("detail__title").innerHTML = targetName;
+  document.getElementById("detail__year").innerHTML = targetYear;
+  document.getElementById("detail__format").innerHTML = targetFormat;
+  document.getElementById("detail__genre").innerHTML = targetGenre;
+  document.getElementById("detail__img").setAttribute("src", targetImg);
+  document.getElementById("detail__desc").innerHTML = targetDesc;
 }
 
 function getJSON(url) {
@@ -127,75 +129,32 @@ async function makeRequest(url) {
 }
 
 
-  function filterMovies(arr, searchInput, category) {
-    let wMoviesResults;
-    if (category == "genre") {
-      wMoviesResults = arr.filter((x) => x.genre.includes(searchInput));
-    } else if (category == "format") {
-      wMoviesResults = arr.filter((x) =>
-        x.format.includes(searchInput)
-      );
-    } else if (category == "title") {
-      wMoviesResults = arr.filter((x) => x.title.includes(searchInput));
-    }
-    return wMoviesResults;
-  }
+function getTargets(targetID) {
+  let target = document.getElementById(targetID);
+  targetName = target.innerHTML;
+  targetGenre = target.getAttribute("data-genre");
+  targetFormat = target.getAttribute("data-format");
+}
 
-  function getCategory(){
-    let category = document.getElementById("searchInput").name;
-    return category;
-  }
+function toggleX() {
+  document.getElementById("detail").classList.toggle("hidden");
+  document.getElementById("search").classList.toggle("hidden");
+}
+window.toggleX = toggleX;
 
-  function getSearchValue(){
-    searchInput = document.getElementById("searchInput").value;
-    return searchInput;
-  }
+function toggleHide(el) {
+  resetTargets();
+  targetID = el.id;
+  getTargets(targetID);
+  getRapidAPI(targetName);
+  getmdbAPI(targetName);
+  setTimeout(function () {
+    displayMovie();
+    toggleX();
+  }, 900);
+}
 
-  function buildSearchResults(arr){
-    if (arr.length<1){
-
-    }
-    var ul = document.getElementById("output");
-    ul.setAttribute("class", "result__list");
-    if (arr.length<1){
-      ul.innerHTML = "There are no results";
-    } else {
-    ul.innerHTML = "";
-    for (var i = 0; i < arr.length; i++) {
-      var li = document.createElement("li");
-      li.appendChild(document.createTextNode(arr[i].title));
-      li.setAttribute("id", i);
-      li.setAttribute("onclick", "toggleHide(this)");
-      li.setAttribute("data-genre", arr[i].genre);
-      li.setAttribute("data-format", arr[i].format);
-      li.setAttribute("class", "result__item")
-      ul.appendChild(li);
-    }}
-  }
-
-  function getTargets(targetID){
-    let target = document.getElementById(targetID);
-    targetName = target.innerHTML;
-    targetGenre = target.getAttribute('data-genre');
-    targetFormat = target.getAttribute('data-format');
-    
-  }
-
-  function toggleX() {
-    document.getElementById('detail').classList.toggle("hidden");
-    document.getElementById('search').classList.toggle("hidden");
-
-    }
-
-  function toggleHide(el) {
-    resetTargets();
-    targetID =  el.id;
-    getTargets(targetID);
-    getRapidAPI(targetName);
-    getmdbAPI(targetName);
-    setTimeout(function(){ displayMovie(); toggleX(); }, 700);
-    
-    }
+window.toggleHide = toggleHide;
 
 function showMovies(url = "js/movies.json") {
   getMovies(url).then(function (wMovies) {
@@ -207,11 +166,11 @@ function showMovies(url = "js/movies.json") {
     let wMoviesResults = filterMovies(wMovies, searchInput, category);
 
     buildSearchResults(wMoviesResults);
-
   });
 }
 
-if (document.getElementById("submitSearch")){
-document.getElementById("submitSearch").addEventListener("click", () => {
+if (document.getElementById("submitSearch")) {
+  document.getElementById("submitSearch").addEventListener("click", () => {
     showMovies();
-  })};
+  });
+}

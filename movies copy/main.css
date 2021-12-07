@@ -1,0 +1,324 @@
+/* VARIABLES */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&display=swap");
+
+/* https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff */
+
+:root {
+  --dblack: #0b090a;
+  --lblack: #161a1d;
+  --dred: #660708;
+  --mred: #a4161a;
+  --lred: #ba181b;
+  --dgrey: #b1a7a6;
+  --mgrey: #d3d3d3;
+  --lgrey: #f5f3f4;
+  --white: white;
+  --hfont: "Playfair Display", serif;
+  --pfont: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+/* ALL VIEWS */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--pfont);
+  position: relative;
+  color: var(--lgrey);
+  background-color: var(--lblack);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--hfont);
+}
+
+/* SEARCH VIEW */
+.search {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  width: 100vw;
+  background-color: transparent;
+}
+.search__label {
+  display: block;
+}
+.search__cat {
+  height: 2em;
+  width: 80vw;
+  max-width: 200px;
+  margin: 0.3em;
+}
+.search__input {
+  height: 2em;
+  width: 80vw;
+  max-width: 200px;
+}
+
+.search__submit {
+  padding: 10px;
+  margin: 20px;
+  background-color: var(--dred);
+  color: var(--lgrey);
+  font-family: var(--hfont);
+  font-size: 1.2em;
+  width: 80vw;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.search__submit:hover {
+  background-color: var(--lred);
+  color: white;
+}
+.search__link {
+  font-style: italic;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--dred);
+  padding-bottom: 1em;
+}
+
+.search__link:hover {
+  color: var(--lred);
+}
+
+.result__item {
+  list-style-type: none;
+  margin-left: -3em;
+}
+.result__item:hover{
+    color: var(--lred);
+}
+
+.result__list {
+}
+
+/* DETAIL VIEW */
+
+.detail {
+  background-color: var(--dblack);
+  position: fixed;
+  color: var(--lgrey);
+  top: 0vh;
+  width: 98vw;
+  height: 98vh;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(7, auto);
+  overflow-y: scroll;
+}
+
+.detail__title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  padding-left: 0.5em;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.detail__year {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  text-align: left;
+}
+
+.detail__format {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  padding-left: 0.5em;
+  text-align: center;
+}
+
+.detail__genre {
+  grid-row: 4/5;
+  grid-column: 1/3;
+  padding-left: 0.5em;
+  text-align: center;
+}
+
+.detail__X {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: end;
+  padding: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+}
+.detail__X:hover {
+  color: var(--lred);
+}
+
+.detail__img {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  display: block;
+  margin: auto;
+}
+
+.detail__desc {
+  grid-column: 1/3;
+  grid-row: 5/7;
+  padding: 0 0.5em;
+  background-color: var(--dred);
+  margin: 1em;
+  color: var(--white);
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.detail__disclaimer {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.7em;
+  padding: 0 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BROWSE VIEW */
+.body__full {
+  margin: auto;
+  background-color: var(--mgrey);
+  color: var(--dblack);
+}
+.full__head {
+  position: fixed;
+  background-color: var(--lblack);
+  color: var(--lgrey);
+  padding: 0.5em;
+  width: 100vw;
+  margin: 0;
+  top: 0;
+  text-align: center;
+}
+.full__head a {
+  color: var(--lgrey);
+  text-decoration: none;
+}
+.full__head a:hover {
+  color: var(--lred);
+}
+.full__list {
+  margin-top: 8em;
+  padding: 1em;
+}
+.full__item li {
+  list-style-type: none;
+}
+
+.all__movies:hover {
+    color: var(--lred);
+  }
+
+.alpha__links a {
+  padding: 0.2em;
+}
+
+/* MEDIA LARGE VIEW */
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-family: var(--pfont);
+    position: relative;
+    background-image: url("images/geoffrey-moffett-TFRezw7pQwI-unsplash.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: var(--lblack);
+  }
+  .search {
+    position: absolute;
+    top: 18vh;
+    right: 27vw;
+    background-color: var(--lgrey);
+    width: 49vw;
+  }
+  .detail {
+    grid-template-columns: auto 1fr 1fr 3em;
+    grid-template-rows: repeat(10, auto);
+  }
+  .detail__title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .detail__year {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+
+  .detail__format {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: start;
+  }
+
+  .detail__genre {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+
+  .detail__X {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: end;
+    padding: 0.5em;
+    font-size: 2em;
+  }
+
+  .detail__img {
+    grid-column: 1/2;
+    grid-row: 1/8;
+    align-self: self-start;
+    max-width: 50vw;
+  }
+
+  .detail__desc {
+    grid-column: 2/5;
+    grid-row: 3/5;
+    vertical-align: middle;
+  }
+
+  .detail__disclaimer {
+    grid-column: 1/5;
+    grid-row: 10/11;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  .body__full {
+    background-image: url("images/denise-jans-Lq6rcifGjOU-unsplash.jpg");
+    background-size: 100vw;
+    background-repeat: repeat;
+  }
+  .full__list {
+    background-color: var(--lgrey);
+    width: 40vw;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 700px) {
+    
+    .full__list {
+      width: 30vw;
+    }
+  }
+  
