@@ -2715,5 +2715,25 @@
     "title": "Wonder Woman 1984",
     "genre": "SciFi/Fantasy/Marvel/DC",
     "format": "DVD"
+  },
+  {
+    "title": "I Am Dragon",
+    "genre": "SciFi/Fantasy",
+    "format": "Blu-ray/DVD"
+  },
+  {
+    "title": "Spiderman Into the Spiderverse",
+    "genre": "SciFi/Fantasy/Marvel/DC",
+    "format": "DVD"
+  },
+  {
+    "title": "Santa Clause",
+    "genre": "Christmas/Holidays",
+    "format": "Blu-ray"
+  },
+  {
+    "title": "Santa Clause 2",
+    "genre": "Christmas/Holidays",
+    "format": "Blu-ray"
   }
 ]
